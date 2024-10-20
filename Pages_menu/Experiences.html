@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Expérience professionnel</title>
+</head>
+
+<!----------------------------------------------------Style css---------------------------------------->
+<style>
+    body{
+        width: 100%;
+    }
+    header{
+        background-color:crimson;
+        color: black;
+        text-align: center;
+    }
+    h2{
+        border: solid red;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    footer{
+        background-color: crimson;
+        color:whitesmoke;
+        height: 50px;
+    }
+    
+    /*******Coloration des textes et des liens*******/
+    #form0{
+        color: blue;
+    }
+    h3{
+        text-align: left;
+        text-decoration: 2px underline;
+    }
+
+    /*****************Sections***************/
+    .ref{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    padding: 0%;
+    list-style-type: none;
+    }
+    nav li.tache{
+        background-color: aquamarine;
+        list-style-type: none;
+        text-align: justify;
+        padding: 0;
+    }
+    .section1{
+        background-color:blue;
+        width: 100%;
+    }
+    .duree{
+        background-color:bisque;
+        width: 30%;
+    }
+    .employeur{
+        background-color: cadetblue;
+        width: 30%;
+    }
+    .tache{
+        background-color: aquamarine;
+        width: 40%;
+    }
+    ul.liste{
+        list-style-type:circle;
+    }
+    .duree, .employeur, .tache{
+        font-size: large;
+    }
+    /*************Mise en forme*********/
+    h2.stage{
+        border: solid sienna;
+        background-color: burlywood;
+        
+    }
+    h2.cartographe{
+        background-color: darkgray;
+    }
+    h2.geom{
+        border: solid green;
+        background-color: powderblue;
+    }
+    .reffoot{
+    display: flex;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    }
+    ul.reffoot li{
+        color:black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-right: 300px;
+        
+    }
+    
+
+</style>
+<body>
+    <header> 
+        <marquee behavior="scroll" direction="left"SCROLLAMOUNT="20">
+            <h1>Mes Expériences professionnelles</h1>
+        </marquee>
+    </header>
+    <!---------------------------Stagiaire à l'INP------------------------------>
+    <div>
+        <h2 class="stage">Stagiaire à l'intitut nationale de pédologie</h2>
+        <div class="section1">
+            <nav>
+                <ul class="ref">
+                    <!-------Division tâches-->
+                        <li class="tache"> <h3>Mes Tâches</h3>
+                            <ul class="liste">
+                                <li>Collecte de données</li>
+                                <li>Suivi phénologique de la chaine de valeur riz</li>
+                                <li>Cartographie</li>
+                            </ul>
+                        </li>
+                    <!-------Division durée-->
+                        <li class="duree "> <h3>Durée</h3>
+                            <ul class="liste">
+                                <li> mai 2024 à novembre 2024</li>
+                            </ul>
+                        </li>
+                    <!--------Division Enployeur-->
+                        <li class="employeur"> <h3>Employeur</h3>
+                            <ul class="liste">
+                                <li><a href="https://bo.senegalservices.sn/service-administratif/institut-national-de-pedologie">
+                                    INP</a>
+                                </li>
+                                <li>Kédougou-Sénégal</li>
+                            </ul>
+                        </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!----------------------------------Cartographe ANSD---------------------------->
+    <div>
+        <h2 class="cartographe"> Cartographe</h2>
+        <p>En tant qu'agent cartographe à  l'<span class="form0">ANSD </span>, mon rôle consistait à collecter des données en utilisant les
+            centroïdes des concessions comme information géographique et l'outil PIGOR comme outil de travail.
+        </p>
+        <div class="section1">
+            <nav>
+                <ul class="ref">
+                    <!-------Division tâches-->
+                        <li class="tache"> <h3>Mes Tâches</h3>
+                            <ul class="liste">
+                                <li>Collecte de données</li>
+                                <li>SIG</li>
+                                <li>Cartographie</li>
+                            </ul>
+                        </li>
+                    <!-------Division durée-->
+                        <li class="duree "> <h3>Durée</h3>
+                            <ul class="liste">
+                                <li> Septembre-Octobre 2022</li>
+                            </ul>
+                        </li>
+                    <!--------Division Enployeur-->
+                        <li class="employeur"> <h3>Employeur</h3>
+                            <ul class="liste">
+                                <li><a href="https://www.ansd.sn/">
+                                    ANSD</a>
+                                </li>
+                                <li>Thiès-Sénégal</li>
+                            </ul>
+                        </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!---------------------------------Géomaticienne--------------------------->
+    <div>
+        <h2 class="geom"> Géomaticienne</h2>
+        <p>Mes missions en tant que <span id="form0"> géomaticienne </span> et <span id="form0"> intégrateur </span> en <span id="form0"> SIG </span>
+             à  <a href="https://onas.sn/">l'Office National de 
+                l'Assainissement du Sénégal</a> consistaient à assurer l'intégration des données dans la base 
+            de données géographiques de l'entreprise. Cette intégration se faisait principalement avec les 
+            logiciels ArcGIS et QGIS,
+            en veillant à la connectivité des éléments du réseau d'assainissement.
+        </p>
+        <div class="section1">
+            <nav>
+                <ul class="ref">
+                    <!-------Division tâches-->
+                        <li class="tache"> <h3>Mes Tâches</h3>
+                            <ul class="liste">
+                                <li>Collecte de données</li>
+                                <li>Mise à jour SIG</li>
+                                <li>Cartographie</li>
+                                <li>Toponimie</li>
+                                <li>SGBS</li>
+                            </ul>
+                        </li>
+                    <!-------Division durée-->
+                        <li class="duree "> <h3>Durée</h3>
+                            <ul class="liste">
+                                <li> Juillet 2021; Novembre-Mars 2022</li>
+                            </ul>
+                        </li>
+                    <!--------Division Enployeur-->
+                        <li class="employeur"> <h3>Employeur</h3>
+                            <ul class="liste">
+                                <li><a href="https://onas.sn/">
+                                    ONAS</a>
+                                </li>
+                                <li>Saint-Louis,Sénégal</li>
+                                <li>Dakar,Sénégal</li>
+                            </ul>
+                        </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+<footer>
+    <nav >
+        <ul class="reffoot">
+            <li>Cartographe</li>
+            <li>Géomaticienne</li>
+            <li>Agent de collecte</li>
+        </ul>
+    </nav>
+</footer>
+</html>

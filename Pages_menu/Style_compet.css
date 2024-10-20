@@ -1,0 +1,90 @@
+/**********Corps de la page***********/
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../ressources/fond.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    align-items:center;
+    justify-content: center;
+    
+/********Les tittres************/
+}
+h1{
+    text-align: center;
+}
+h2{
+    color: blue;
+    text-align: left;
+}
+
+/************Entete*************/
+header{
+    background-color: whitesmoke;
+    
+}
+/**********Pied de page *************/
+footer{
+    background-color: whitesmoke;
+}
+/***Contenu du pied de page ***/
+.competences {
+    display: flex;
+    list-style-type: none; 
+    padding: 0px;
+    background-color:whitesmoke;
+    color:blue;
+    font-size: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0%;
+}
+.competences li{
+    margin-right: 30px;
+}
+/**********Gestion du couresel */
+.carousel-list .carousel-items {
+    max-width: 50%;
+    max-height: 50%;
+    block-size: 80%;
+    display:block;
+    padding: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 5px  5px rgb(0, 0, 0,0.05);
+    transition: 0.2s ease;
+    list-style-type: none;
+    background-color: aliceblue;
+    margin-right: 20px;
+}
+
+.carousel-list .card-image{
+    width: 50%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.carousel-list .card-paragraph{
+    color: black;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background-color: whitesmoke;
+    border-radius: 50px;
+}
+
+
+img{
+    border: solid black;
+}
+
+.container swiper{
+    width: 80%;
+    padding: 10px;
+    
+}
+
+.card-paragraph {
+    text-align: justify;
+    font-size: 1,5vw;
+}
+/***********Les bouttons**************/

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleprojet.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Mes projets académiques</title>
+</head>
+<body>
+    <!------------------------------------Contenu du sidebar--------------------------->
+    <div class="sidebar">
+        <a href="#" class="menu-item" data-target ="Photo_interprétation">Photo interprétation</a>
+        <a href="#" class="menu-item" data-target ="teledetection">Classification orientée objet</a>
+        <a href="#" class="menu-item" data-target ="drone">Traitement d'images DRONE : Barrage El Haiemer au Maroc</a>
+        <a href="#"class="menu-item" data-target="agrogeo"> Application sur la plateforme Wapor</a>
+        <a href="#"class="menu-item"data-target="cartcult"> Cartographie des cultures</a>
+    </div>
+
+    <!----------------------------------------Contenu principal----------------------->
+    <div class="content">
+        <!-----------Cartographie-->
+        <div id="Photo_interprétation" class="content-section active">
+            <h2> Photo interprétation Bou Azzer Maroc </h2>
+            
+                <p>
+                    Ce projet de photo-interprétation portant sur la zone géologique de Bou Azzer a été réalisé
+                    dans le but d’extraire le maximum d’informations à l’aide des données satellitaires. Son
+                    objectif est de réaliser la cartographie des différentes formations géologiques de la zone grâce
+                    à l’utilisation des données aériennes. Pour la réalisation du projet nous avons essentiellement
+                    utilisé une image multispectrale de Landsat 8 en combinaison colorée que nous avons classée
+                    grâce à la digitalisation des couches, mais également grâce à l’utilisation des algorithmes de
+                    classification supervisée. Ce qui nous a permis d’obtenir les différentes formations
+                    géologiques dont le résultat a été cartographié et présenté sous forme de cartes. Nous avions
+                    également réalisé des cartes de substitution portant sur les niveaux de perméabilité et
+                    d’érosion des différentes unités géologiques de la zone. Cette partie du projet a été faite grâce
+                    à l’exploitation de la documentation. Les résultats ont été matérialisés en définissant des
+                    seuils de perméabilité et d’érodabilité caractérisant les différentes formations géologiques.
+                    Nous avons également utilisé un modèle numérique pour mieux appréhender la topographie
+                    de la zone. Le MNT combiné à l’image multispectrale nous a permis d’extraire également
+                    certaines informations liées au linéament et à la fracturation de la zone.
+                </p>
+                <p>Pour en apprendre plus veuillez cliquer sur ce 
+                    <a href="https://drive.google.com/file/d/1H_296lQav_yRde0hzrh1M0rhQeXmpwgR/view?usp=drive_link" target="_blank">
+                    lien</a> pour <span class="form0"> consulter le rapport complet </span></p>
+            
+            
+        </div>
+
+        <!----------Teledetection----->
+        <div id="teledetection" class="content-section">
+            <h2>Classification orientée Object</h2>
+            <p>
+                Ce projet entre dans le cadre de la classification orientée objet d’une image NAIP.
+                Dans ce rapport nous allons essentiellement parler des différentes étapes de
+                réalisation de la classification en justifiant le choix des algorithmes et fonctionnalités.
+                Avant de commencer la classification objet nous allons d’abord réaliser une
+                classification non supervisée qui nous permettra de savoir le nombre de classe sur
+                lequel nous allons continuer le traitement. 
+                <a href="https://drive.google.com/file/d/1olnn15j5jjVdqzmLIco5L-pvpCdska0E/view?usp=drive_link" target="_blank">lien en attaché</a>
+                <h3>Applications</h3>
+                <ul>
+                    <li>Classification supervisée</li>
+                    <li>Classification non supervisée</li>
+                    <li>Algorithme Random Forest</li>
+                    <li>Segmentation d'image</li>
+                    <li>Métriques d'évaluation</li>
+                    <li>Cartographie</li>
+                </ul>
+
+            </p>
+        </div>
+
+        <!----------Analyse spatiale-->
+        <div id="drone" class="content-section">
+            <h2>Traitement d'images prises en vue aériennes par DRONE</h2>
+            <p>
+                Ce travail s’inscrit dans le cadre du travail pratique effectué en salle pour le traitement des
+                images de prise de vue aérienne par Drone.
+                Son objectif est de décrire les différentes phases de traitement des images mais avant cela nous
+                allons définir quelques concepts liés à l’utilisation du drone et au montage d’un projet de prise
+                de vue par drone.
+                Il faut noter que l’utilisation du drone est devenue prépondérant ces derniers temps parce qu’il
+                est un outil de technologie très important et qui nous fait économiser en termes de temps et de
+                de ressources financières grâce à son échelle réduite. D’où son utilisation dans plusieurs
+                domaines tel que l’aménagement du territoire, l’urbanisme, l’agriculture, la gestion des
+                ressources naturelles, la cartographie, la topographie etc.
+                Ce projet porte sur un ensemble de <span class="form0"> 53 photos prise par drone </span> et portant sur le <span class="form0"> Barrage El Haiemer </span>
+                au Maroc.
+                Pour ce rapport, les logiciels que nous avons utilisés sont : Agisoft professional pour le
+                traitement des images et le logiciel <span class="form0"> GIS ArcGIS </span> pour la présentation des résultats. cliqué
+                <a href="https://drive.google.com/file/d/1yse5e9MwPgBbLwTIyKuJfPgMbvq1TWEE/view?usp=drive_link"target="_blank">ici</a> pour consulter le document en entier.
+            </p>
+        </div>
+        <!----------Resultats-------->
+        <div id="agrogeo" class="content-section">
+            <h2>Application sur Wapor</h2>
+            <p>
+                Wapor, Association mondiale pour la recherche sur l’opinion publique est un portail
+                qui permet de surveiller la productivité de l’eau avec l’utilisation des données de
+                télédétection.
+                Dans ce projet nous allons essentiellement utiliser la plateforme Wapor et le logiciel
+                Qgis pour l’application. Les données ont été téléchargées via Wapor et le logiciel Qgis
+                et Excel ont permis le traitement et la visualisation des données. Les données utilisées
+                sont les données de la biomasse saisonnière, de l’évapotranspiration
+                interstitielle actuelle et d’une couche de classification de la couverture
+                terrestre sur la zone du Maroc.Wapor, Association mondiale pour la recherche sur l’opinion publique est un portail
+                qui permet de surveiller la productivité de l’eau avec l’utilisation des données de
+                télédétection.
+                Dans ce projet nous allons essentiellement utiliser la plateforme Wapor et le logiciel
+                Qgis pour l’application. Les données ont été téléchargées via Wapor et le logiciel Qgis
+                et Excel ont permis le traitement et la visualisation des données. Les données utilisées
+                sont les données de la biomasse saisonnière, de l’évapotranspiration
+                interstitielle actuelle et d’une couche de classification de la couverture
+                terrestre sur la zone du Maroc. Lien du document entier en
+                 <a href="https://drive.google.com/file/d/1N2XfgDQKc5CMkfviq0gcxP-SAQtPNuG4/view?usp=drive_link"target="_blank">attaché</a>
+            </p>
+        </div>
+    
+        <div id="cartcult" class="content-section">
+            <h2>La cartographie des cultures</h2>
+            <p>
+                Il y’a longtemps, le suivi des cultures se faisait à l’aide des méthodes empiriques de collecte
+                de données terrain et de production d’inventaires statistiques, mais aujourd’hui l’utilisation de
+                la télédétection a considérablement simplifié la tâche avec l’application des nouvelles
+                techniques cartographiques. La cartographie des cultures est un ensemble de techniques
+                permettant de visualiser sous une carte l’ensemble des types de culture qui poussent dans une
+                région donnée. Elle peut nous renseigner sur les types de culture, la limite des champs, elle
+                peut aussi détecter les changements observés, évaluer les dégâts, présenter les indices tels que
+                l’indice de la végétation, le stress hydrique etc.
+                Objectif du projet
+                L’objectif de ce projet est de réaliser une cartographie des cultures dans un périmètre agricole
+                situé dans la zone du Loukkos au Nord-Ouest du Maroc. La réalisation de cette tâche se fera
+                par
+                <a href="https://drive.google.com/file/d/1fLT8TyoGoJ4jXzEKdyFPF8tvqSmNV6_n/view?usp=drive_link"target="_blank">Lien du document</a>
+            </p>
+        </div>
+    </div>
+
+
+    <!-------------------------------------------Java Script----------------------------------------->
+    
+    <script>
+        // Sélectionner tous les éléments du menu
+        const menuItems = document.querySelectorAll('.menu-item');
+
+        // Gérer le clic sur chaque élément du menu
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Supprimer la classe active de toutes les sections
+                document.querySelectorAll('.content-section').forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                // Afficher la section correspondante
+                const target = item.getAttribute('data-target');
+                document.getElementById(target).classList.add('active');
+
+                // Activer l'élément de menu cliqué
+                menuItems.forEach(menu => menu.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+
+    </script>
+    
+</body>
+
+<footer>
+    <!--Image défilement mes resultats en cartographie-->
+    <div class="image-slider">
+        <a href="../ressources/Bassin versant 3.jpg"target="_blank"><img src="../ressources/Bassin versant 3.jpg" alt="Image 1"></a>
+        <a href="../ressources/Carte de classification.jpg"target="_blank"><img src="../ressources/Carte de classification.jpg" alt="Image 2"></a>
+        <a href="../ressources/Carte de perméabilité.jpg"target="_blank"><img src="../ressources/Carte de perméabilité.jpg" alt="Image 3"></a>
+        <a href="../ressources/Carte des linéament.jpg "target="_blank"><img src="../ressources/Carte des linéament.jpg" alt="Image 4"></a>
+        <a href="../ressources/erodabilité.jpg"target="_blank"><img src="../ressources/erodabilité.jpg" alt="Image 4"></a>
+        <a href="../ressources/Fracture.jpg"target="_blank"><img src="../ressources/Fracture.jpg" alt="Image 4"></a>
+        <a href="../ressources/Classification des types de culture.jpg"target="_blank"><img src="../ressources/Classification des types de culture.jpg" alt=""></a>
+        <a href="../ressources/Mask du Rededge.jpg"target="_blank"><img src="../ressources/Mask du Rededge.jpg" alt=""></a>
+        <a href="../ressources/Visualisation NDVI 1.jpg"target="_blank"><img src="../ressources/Visualisation NDVI 1.jpg" alt=""></a>
+    </div>
+   
+</footer>
+</html>

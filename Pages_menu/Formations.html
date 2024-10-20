@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styleformation.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Mes formations</title>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#" class="menu-item" data-target ="master">Master</a>
+        <a href="#" class="menu-item" data-target ="licence">Licence</a>
+        <a href="#" class="menu-item" data-target ="dt">Diplome de Technologie</a>
+        <a href="#" class="menu-item" data-target ="cert">Certification</a>
+        <a href="#" class="menu-item" data-target ="bac">Baccalaureat</a>
+    
+    </div>
+    <!-------Contenu principal-->
+    <div class="content">
+        <!-----------Master-->
+        <div id="master" class="content-section active">
+            <h2> Master Télédétection et Systèmes d'information géographique</h2>
+            <p>
+                Le CRASTE-LF, basé à l'ONU, est un institut de recherche et de 
+                formation dans le domaine de la technologie spatiale. Il
+                forme des spécialistes en sciences spatiales dans les 
+                pays d'Afrique francophone. Les formations offertes 
+                tournent essentiellement autour de la Télédétection,
+                des Systèmes d'Information Géographique et de l'utilisation
+                de ses produits d'observation de la Terre pour résoudre
+                des problèmes liés à l'environnement, à l'agriculture, 
+                à l'urbanisme, et aux catastrophes naturelles, entre 
+                autres. Les programmes de formation qui m'ont le plus marqué : 
+            </p>
+            <h3> Mes principales applications</h3>
+            <ul>
+                <li> Télédétection </li>
+                <li> Systèmes d'Information Géographique</li>
+                <li> Cartographie numérique</li>
+                <li> Géoservices, WebMapping</li>
+                <li> Photo-Interprétation </li>
+                <li> Traitement d'image</li>
+                <li> Machine Learning, Big DATA</li>
+                <li>Agro-Géomatique, Agriculture Intelligente</li>
+                <li>Produit d'OT, Imagerie Thermique</li>
+                <li>Radar, INSAR</li>
+                <li> Ecologie, Sol et Végétation</li> 
+            </ul>
+            <h2>Master Ressources Environnement et Développement</h2>
+            <p>
+                Ce master m'a permis d'acquérir les bases de la géographie
+                physique et de faire mes premiers pas dans le monde de 
+                la recherche. Spécialisée en hydrologie, ma thématique
+                de recherche portait sur "La problématique de l'accès à 
+                l'eau et à l'assainissement dans la commune de Ngayokhème 
+                (Fatick, Sénégal)". L'objectif de mon mémoire était 
+                d'étudier les problèmes d'accès à l'eau et à 
+                l'assainissement que rencontrent les populations des
+                communes dites rurales au Sénégal, dans le contexte des 
+                Objectifs du Millénaire pour le Développement (OMD) et
+                des Objectifs de Développement Durable (ODD) de l'époque.
+            </p>
+        </div>
+        <!------------Licence----->
+        <div id="licence" class="content-section">
+            <h2>Licence Géographie Physique</h2>
+            <p>Option geographie physique (Hydrologie)</p>
+        </div>
+        <!--------Diplome de technologie-->
+        <div id="dt" class="content-section">
+            <h2>Diplome Universitaire de Technologie</h2>
+            <p>Mes premiers pas en sciences géomatiques ont été faits au département de géomatique du CEDT, le G15,
+                un centre de formation technique qui assure la formation des jeunes dans les domaines techniques et de 
+                l'entrepreneuriat. Au CEDT G15, j'ai obtenu un double diplôme de Brevet de Technicien Supérieur en
+                géomatique et de Diplôme de Technicien Supérieur en géomatique. Le programme de formation est accès : 
+            </p>
+            <h3> Mes principales application</h3>
+            <ul>
+                <li>Analyse et conception d'un SIG</li>
+                <li>Traitement et Exploitation du SIG</li>
+                <li>Acquisition et collecte de données spatiales</li>
+                <li>Stockage et Structuration des données spatiales</li>
+                <li>Diffusion : Carte thématique</li>
+                <li>Cartographie thématique</li>
+                <li>Stéréonumérisation</li>
+                <li>Base de données à référence spatiale</li>
+                <li>Statistique appliquées à la Géomatique</li>
+                <li> Exploitation d'un Modèle Numérique de Terrain (MNT)</li>
+            </ul>
+        </div>
+        <div id="cert" class="content-section">
+            <h2>Mes certifications</h2>
+            <ul>
+                <li> Scienceq de données avec R</li>
+                <li> Développement Front End</li>
+                <li>Comprendre et analyser les enjeux et les actions du développement durable : 
+                    [Institut de la francophonie | Université de Senghor d’Alexandrie |2021] Formation en ligne
+                </li>
+                <li>Géomatique Appliquée en l'Environnement [Institut SABDARIFA | Dakar, 2017]</li>
+            </ul>
+        </div>
+        <div id="bac" class="content-section">
+            <h2>Baccalaureat</h2>
+            <p>Option : Sciences sociales</p>
+        </div>
+    </div>
+    <script>
+        // Sélectionner tous les éléments du menu
+        const menuItems = document.querySelectorAll('.menu-item');
+
+        // Gérer le clic sur chaque élément du menu
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Supprimer la classe active de toutes les sections
+                document.querySelectorAll('.content-section').forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                // Afficher la section correspondante
+                const target = item.getAttribute('data-target');
+                document.getElementById(target).classList.add('active');
+
+                // Activer l'élément de menu cliqué
+                menuItems.forEach(menu => menu.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+
+    </script>
+</body>
+</html>

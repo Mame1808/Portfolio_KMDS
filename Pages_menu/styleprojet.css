@@ -1,0 +1,126 @@
+/* Styles généraux */
+body {
+    background-image: url('../ressources/techspace.jpg');
+    background-size:contain;
+    background-attachment: fixed;
+    margin: 0;
+    display: block;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color:darkgreen;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.sidebar a {
+    display: block;
+    padding: 16px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.sidebar a.active, .sidebar a:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Contenu principal */
+.content {
+    margin-left: 200px;
+    padding: 16px;
+    flex-grow: 1;
+}
+
+/* Sections de contenu masquées par défaut */
+.content-section {
+    display: none;
+}
+
+/* Section active affichée */
+.content-section.active {
+    display: block;
+}
+
+/****************Mise en forme **********************/
+#Photo_interprétation, #teledetection, #drone, #agrogeo, #cartcult{
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color: aliceblue;
+    margin: 2px;
+}
+p{
+    margin: 10px;
+}
+.form0{
+    color:red;
+}
+h3{
+    margin-bottom: 0px;
+}
+
+/*******Defilement de mes resultats en cartographie*******/
+footer {
+    background-color:none;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Empêche le débordement des images */
+}
+
+.image-slider {
+    display: flex;
+    gap: 20px; /* Espace entre les images */
+    animation: scroll 30s linear infinite; /* Animation continue */
+}
+
+.image-slider img {
+    width: 350px; /* Largeur des images */
+    height: 350px;
+    border-radius: 8px; /* Arrondi des coins */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+
+/* Animation de défilement horizontal */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    .content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+

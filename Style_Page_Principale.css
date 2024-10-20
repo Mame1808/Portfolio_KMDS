@@ -1,0 +1,173 @@
+body{
+    background-image: url('ressources/fond_page_principale.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+/*********Titre du nom et profil ************/
+h2{
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+.name{
+    text-align:center;
+    width: 100%;
+    float: left;
+    background-color: aliceblue;
+    color: blue;
+    border: solid deeppink;
+}
+
+/***********Paragraphe et informations*********************/
+.apropos{
+    width: 100%;
+    text-align: justify;
+    float: left;
+
+}
+/************Division de l'espace*************************/
+/***Contenu principal*****/
+.content{
+    display:flex;
+    width: 100%;
+    height: 70vh;
+    color: whitesmoke;
+    
+}
+.info{
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: none;
+    margin: 5%;
+    margin-right: 1%;
+    margin-top: 0;
+}
+.monimage{
+    width: 40%;
+    height: 50%;
+    padding: 5%;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, red, blue);
+    border-radius: 2px;
+}
+.photo{
+    width: 50%;
+}
+/*********Le menu **********/
+.menu {
+    display: flex;
+    list-style-type: none; 
+    padding: 10px;
+    background-color : crimson;
+    color:mediumblue;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0%;
+    
+    
+}
+.menu li{
+    margin-right: 50px;
+}
+.menu a.hover{
+    background-color:brown;
+
+}
+/********Entete**************/
+.header-container{
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+/***********En tête**********/
+header{
+    width: 100%;
+}
+.bienvenu{
+    margin: 0;
+}
+
+/********Pied de page ********/
+footer{
+    color: whitesmoke;
+    width: 40%;
+    height: 5px;
+    float: right;
+    padding: 30px;
+}
+
+.divers{
+    display: flex;
+}
+.divers li{
+    margin-right: 50px;
+    list-style-type: none;
+    position: left;
+    
+}
+/*les images */
+img{
+    width: 80%;
+    height: 350px;
+    margin-left: 50px;
+    margin-top: 0px;
+    
+}
+/*****H3**********/
+h3{
+    text-align: justify;
+}
+/************Les liens de contact**************/
+.Link{
+    width: 40px;
+    height: 40px;
+    border: solid blue;
+
+
+}
+.Link2{
+    width: 40px;
+    height: 40px;
+    padding-left: 0%;
+    margin-left: 90px;
+    border: solid blue;
+}
+/*****Forme******/
+#form0{
+    color:royalblue;
+}
+#form1{
+    color: chocolate;
+}
+
+/************Mise en forme des onglets***************/
+#acceuil{
+    background-color:whitesmoke;
+    width: 200px;
+    padding: 5px;
+    border:  2px solid deeppink;
+}
+
+
+#projet a, #exp a, #formation a, #competence a, #acceuil a{
+    text-decoration: none;
+    color: black;
+}
+
+#projet , #exp , #formation , #competence , #acceuil {
+    background-color: whitesmoke;
+    width: 200px;
+    padding: 5px;
+    
+}
+/***********Logo formulaire de contact**************/
+#logo{
+    width: 40px;
+    height: 40px;
+    border: solid blue;
+}

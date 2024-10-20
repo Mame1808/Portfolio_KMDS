@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact Khady Mame Diarra SENE</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: beige;
+            max-width: 500px;
+            
+        }
+        .bouton{
+            background-color: greenyellow;
+            padding: 5px;
+            margin-top: 10px;
+        }
+        form{
+            background-color:burlywood;
+            
+        }
+       
+    </style>
+    <form action="Send_Email_to_kmds.php"method="POST">
+        <H2> Pour toutes vos questions veuillez le soummettre ici</H2>
+        <!------Nom complet-->
+        <label for="nom"> Nom Complet : </label><br>
+        <input type="text"id="nom"name="nom"><br>
+        <!-------email----------->
+        <label for="email"> Email : </label><br>
+        <input type="email" id="email"name="email" required><br>
+        <!-------corp du message-->
+        <label for="message"> Votre message : </label><br>
+        <textarea name="message" id="message"></textarea><br>
+        <!----Boutton de soummission-->
+        <button type="submit"class="bouton"> Envoyer</button>
+    </form>
+</body>
+</html>
